@@ -62,3 +62,41 @@ const bottle1 = {
     console.log('We did it!', i);
   }
   
+  // Functions
+// Defining a function
+function login(username, password) {
+  // Validate username and password
+  if (!username || !password) {
+    return 'Username or password not provided'
+  }
+  // Verify username and password
+  if (username == 'EunicePobee' && password == '1234') {
+    return 'User is logged in';
+  } else {
+    return 'Invalid username or password';
+  }
+}
+// Invoking a function
+login('EunicePobee');
+
+
+
+
+// Basic Arithmetic Operations
+11 + 12;
+43 - 12;
+1 + 0.5;
+45 / 7;
+5 * 3;
+14 % 3;
+
+Math.round (45/24)
+Math.floor (45/24)
+Math.random () * 1000
+Math.max(34,32,37);
+'2' + '2';
+'2' - '2';
+'2' * '2';
+Number('2') + 2;
+Number('ty') + 2
+
