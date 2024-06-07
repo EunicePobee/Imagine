@@ -100,3 +100,40 @@ Math.max(34,32,37);
 Number('2') + 2;
 Number('ty') + 2
 
+// Strings in JavaScript
+// Concatenation
+const firstname = 'Eunice';
+const lastname = 'Pobee';
+const middlename = 'Araba';
+firstname + ' ' + middlename + ' ' + lastname;
+// Template literal
+`${firstname} ${middlename} ${lastname}`;
+
+// String Methods
+let fullName = "eunice pobee"
+fullName.length
+
+for (let i = 0; i<=fullName.length-1; i++){
+  console.log(i)
+}
+
+for (let i = 0; i<fullName.length; i++){
+  console.log(i)
+}
+
+fullName.toUpperCase()
+fullName.toLowerCase()
+fullName.charAt(3)
+fullName.slice(7,12)
+fullName.slice(0,6)
+fullName.split("")
+fullName.replace("pobee", "araba")
+fullName.indexOf("nice")
+
+// String Conversion
+Number("3.243")
+parseInt("3.243")
+parseFloat("3.243")
+let amount = 18000
+amount.toString()
+console.log(`GHS${amount}`)
