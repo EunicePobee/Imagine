@@ -137,3 +137,66 @@ parseFloat("3.243")
 let amount = 18000
 amount.toString()
 console.log(`GHS${amount}`)
+
+
+// Write a function that will add a participant to our Google Classroom
+function addUser(username, email) {
+  if (!username || !email) {
+    return 'Username or email not provided';
+  } 
+  
+  if (username == 'EunicePobee' && email == 'arabaawilba@gmail.com') {
+    return 'User has been added';
+  } else {
+    return 'Invalid username or email';
+  }
+}
+
+addUser('EunicePobee', 'arabaawilba@gmail.com');
+
+
+
+
+
+// Write a function that will add a participant to our Google Classroom
+const participants = [];
+function addParticipant (email) {
+  // Check if email was provided
+  if (!email) {
+    return 'No email provided';
+  }
+  // Check if email is valid
+  if (!email.includes('@gmail.com')) {
+    return 'Invalid email provided';
+  }
+  // Add email to participants
+  participants.push(email);
+  return 'Participant added';
+}
+
+
+addParticipant ('arabaawilba@gmail.com');
+addParticipant ('araba@gmail.com');
+addParticipant ();
+addParticipant ('arabaawilba');
+participants;
+
+
+
+
+// Arrays in JavaScript
+const users = [
+  {
+    username: 'eunice',
+    password: '1234',
+    email: 'eunice@gmail.com',
+  },
+   {
+    username: 'poseidon',
+    password: '5678',
+    email: 'poseidon@gmail.com',
+  }
+];
+
+users;
+
