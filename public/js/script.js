@@ -185,18 +185,62 @@ participants;
 
 
 // Arrays in JavaScript
+// const users = [
+//   //   {
+// //     username: 'eunice',
+// //     password: '1234',
+// //     email: 'eunice@gmail.com',
+// //   },
+// //    {
+// //     username: 'poseidon',
+// //     password: '5678',
+// //     email: 'poseidon@gmail.com',
+// //   }
+// // ];
+// // users;
+// ]
+
+
+// Array Methods in JavaScript
+
+// Write a function that will take a user with firstname, lastname and return fullname;
+function fullName (user){
+  return {
+    ...user,
+    fullName: `${user.firstname} ${user.lastname}`,
+  };
+}
+
+const user = {
+  firstname: 'Eunice',
+  lastname: 'Pobee'
+}
+fullName (user);
+
+// Array map
 const users = [
-  {
-    username: 'eunice',
-    password: '1234',
-    email: 'eunice@gmail.com',
-  },
-   {
-    username: 'poseidon',
-    password: '5678',
-    email: 'poseidon@gmail.com',
-  }
-];
+  {firstname: 'Eunice', lastname: 'Pobee'},
+  {firstname: 'Candace', lastname: 'Smith'},
+  {firstname: 'Kimberley', lastname: 'Asare'},
+  {firstname: 'Yvette', lastname: 'Mensah'},
+  {firstname: 'Sirius', lastname: 'Black'},
+]
 
-users;
+users.map(fullName);
 
+// Square of numbers
+function square(number){
+  return (number ** 2);
+}
+
+square(7);
+const numbers = [4, 7, 8, 9];
+numbers.map(square);
+
+
+// Array filter
+function isEven(number){
+  return number % 2 === 0;
+}
+
+isEven(9)
